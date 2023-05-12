@@ -1,0 +1,307 @@
+* {
+    font-family: Segoe UI;
+}
+
+body {
+    margin: 0;
+    color: #FFF;
+}
+
+button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #fd1853;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+    border: none;
+}
+
+button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+}
+
+button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+}
+
+button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fffcfd;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+    animation: scaleUp 0.3s ease-in-out;
+    color: #fd1853;
+}
+
+button:hover {
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fd1853);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+.star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fd1853);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fd1853);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fd1853);
+    z-index: -5;
+    transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fd1853);
+    z-index: -5;
+    transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fd1853);
+    z-index: -5;
+    transition: all .8s ease;
+}
+
+button:hover .star-1 {
+    position: absolute;
+    top: -2%;
+    left: 0%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fd1853);
+    z-index: 2;
+}
+
+button:hover .star-2 {
+    position: absolute;
+    top: 34%;
+    left: 41.5%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fd1853);
+    z-index: 2;
+}
+
+button:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fd1853);
+    z-index: 2;
+}
+
+button:hover .star-4 {
+    position: absolute;
+    top: 0%;
+    left: 55%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fd1853);
+    z-index: 2;
+}
+
+button:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 85%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fd1853);
+    z-index: 2;
+}
+
+button:hover .star-6 {
+    position: absolute;
+    top: 75%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fd1853);
+    z-index: 2;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4c7992;
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(#333, #333);
+    transition: all .5s;
+}
+
+.card:hover {
+    background-image: linear-gradient(#4c7992, #ecd1d1);
+}
+
+.card .img {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-image: url('images/f54aeb8cc915a697035b64cd0d34d208.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img {
+    width: 330px;
+    opacity: 1;
+}
+
+.card:hover .img span {
+    font-size: 28px;
+}
+
+.card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    transform: translateY(30px);
+}
+
+.card:hover .content {
+    height: 415px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content p {
+    margin: 1;
+}
+
+.card .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .content .desc {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
+}

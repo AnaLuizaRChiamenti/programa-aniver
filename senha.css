@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    background-color: #7dcbfc;
+
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin-left: 2px;
+    display: flex;
+    justify-content: center;
+
+}
+
+a {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+}
+
+p {
+    position: absolute;
+    bottom: 500px;
+}
+
+.confetes1 {
+    position: absolute;
+    left: 500px;
+    width: 80%;
+    height: 100%;
+
+}
+
+.confetes2 {
+    position: absolute;
+    left: 0px;
+    width: 80%;
+    height: 100%;
+
+}
+
+.parabens {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 48px;
+    display: flex;
+}
+
+.bolo {
+    position: absolute;
+    width: 500px;
+    bottom: 20px;
+    z-index: -1;
+}
+
+.pulapula {
+    position: absolute;
+    width: 400px;
+    left: 0;
+    bottom: 300px;
+    margin: 5px;
+}
+
+.pulapula2 {
+    position: absolute;
+    width: 400px;
+    right: 0;
+    bottom: 300px;
+    margin: 5px;
+}
+
+.botao-presentes {
+    position: absolute;
+    width: 400px;
+    left: 0;
+    bottom: 300px;
+    margin: 5px;
+}
+
+.presente-1 {
+    position: absolute;
+    left: 300px;
+    top: 80px;
+    width: 200px;
+    height: 200px;
+
+}
+
+.presente-2 {
+    position: absolute;
+    left: 120px;
+    top: 80px;
+    width: 200px;
+    height: 200px;
+
+}
+
+.presente-3 {
+    position: absolute;
+    right: 265px;
+    top: 80px;
+    width: 200px;
+    height: 200px;
+}
